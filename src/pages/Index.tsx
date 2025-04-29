@@ -9,11 +9,15 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import MagneticCursor from "../components/MagneticCursor";
 import { Helmet } from "react-helmet";
+import emailjs from "emailjs-com";
 
 const Index: React.FC = () => {
   useEffect(() => {
     // Update title
     document.title = "ANK's Gallery | AI Automation & Creative Design";
+    
+    // Initialize EmailJS
+    emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS public key
   }, []);
 
   return (

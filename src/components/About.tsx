@@ -22,25 +22,20 @@ const About: React.FC = () => {
           </div>
           
           <div className="relative">
-            <div className="border-2 border-neon-blue p-1 rounded-lg rotate-3 shadow-neon-blue">
-              <div className="overflow-hidden rounded-lg bg-black">
-                <div className="aspect-w-16 aspect-h-9 relative overflow-hidden">
-                  <blockquote className="p-8 italic text-xl">
-                    <span className="text-5xl text-neon-blue">"</span>
-                    <p className="my-4">
-                      We've gone beyond borders. Graphic design was just the beginning. Now, we're building AI agents, automating workflows, and redefining how brands connect.
-                    </p>
-                    <footer className="text-right">
-                      <span className="text-neon-purple font-medium">
-                        — Kennedy Asiedu Nyarko, Founder
-                      </span>
-                    </footer>
-                  </blockquote>
-                </div>
-              </div>
+            <div className="border-2 border-neon-blue p-6 rounded-lg shadow-neon-blue bg-black/50 backdrop-blur-sm">
+              <blockquote className="relative">
+                <div className="text-5xl text-neon-blue absolute -top-2 -left-2">"</div>
+                <p className="my-4 pt-6 pl-6 text-xl italic text-gray-200">
+                  We've gone beyond borders. Graphic design was just the beginning. Now, we're building AI agents, automating workflows, and redefining how brands connect.
+                </p>
+                <footer className="text-right mt-4">
+                  <span className="text-neon-purple font-medium">
+                    — Kennedy Asiedu Nyarko, Founder
+                  </span>
+                </footer>
+                <div className="text-5xl text-neon-blue absolute -bottom-8 right-0">"</div>
+              </blockquote>
             </div>
-            
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-neon-purple rotate-12 rounded-lg"></div>
           </div>
         </div>
       </div>
