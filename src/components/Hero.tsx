@@ -1,0 +1,65 @@
+
+import React, { useEffect } from "react";
+import ParticleBackground from "./ParticleBackground";
+import { ChevronDown } from "lucide-react";
+
+const Hero: React.FC = () => {
+  useEffect(() => {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    fadeInElements.forEach((element, index) => {
+      const htmlElement = element as HTMLElement;
+      htmlElement.style.animationDelay = `${index * 0.2}s`;
+    });
+  }, []);
+
+  return (
+    <section id="home" className="relative min-h-screen flex items-center pt-20 pb-10">
+      <ParticleBackground />
+      
+      <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-8 z-10">
+        <div className="flex flex-col justify-center space-y-6">
+          <h1 className="fade-in animate-fade-in-up">
+            Powering Your Vision with{" "}
+            <span className="neon-text-blue">AI</span> and{" "}
+            <span className="neon-text-purple">Creative Design</span>
+          </h1>
+          
+          <p className="text-gray-300 text-lg fade-in animate-fade-in-up">
+            <span className="neon-text-blue">AI Automation</span> |{" "}
+            <span className="neon-text-purple">AI Consultation</span> |{" "}
+            <span className="neon-text-blue">Graphic Design</span> |{" "}
+            <span className="neon-text-purple">Video Editing</span>
+          </p>
+          
+          <div className="flex flex-wrap gap-4 fade-in animate-fade-in-up">
+            <a href="#services" className="btn btn-primary magnetic">
+              Get Started
+            </a>
+            <a href="#portfolio" className="btn btn-secondary magnetic">
+              Our Work
+            </a>
+          </div>
+        </div>
+        
+        <div className="flex items-center justify-center">
+          <div className="w-full max-w-lg fade-in animate-fade-in-up animate-float">
+            <img 
+              src="/lovable-uploads/69410cfd-15a0-46c5-9f5e-d443640d4ea7.png" 
+              alt="ANK's Gallery - Taking Off" 
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <a 
+        href="#services" 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white hover:text-neon-blue transition-colors duration-300 animate-bounce"
+      >
+        <ChevronDown size={36} />
+      </a>
+    </section>
+  );
+};
+
+export default Hero;
