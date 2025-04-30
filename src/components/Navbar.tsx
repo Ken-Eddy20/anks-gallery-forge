@@ -37,7 +37,12 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between h-20">
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center gap-2">
+          <img 
+            src="/lovable-uploads/69410cfd-15a0-46c5-9f5e-d443640d4ea7.png" 
+            alt="Anks Gallery Logo" 
+            className="h-10 w-auto"
+          />
           <span className="text-xl font-poppins font-bold">
             <span className="neon-text-blue">ANKS</span>{" "}
             <span className="neon-text-purple">GALLERY</span>
