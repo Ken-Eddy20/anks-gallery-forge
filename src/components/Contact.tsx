@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Phone, Mail, MapPin, Instagram, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -54,11 +53,10 @@ const Contact: React.FC = () => {
 
     setIsSubmitting(true);
 
-    // EmailJS service configuration
-    // You'll need to replace these IDs with your actual EmailJS IDs
-    const serviceId = "service_anksgallery";
-    const templateId = "template_contact_anks";
-    const userId = "YOUR_USER_ID"; // Will need to be replaced with the user's actual EmailJS user ID
+    // Updated EmailJS service configuration with your provided credentials
+    const serviceId = "service_7dm631j";
+    const templateId = "template_94dt70u";
+    const userId = "y3trLROsWo1QDwIPt";
 
     try {
       await emailjs.send(serviceId, templateId, {

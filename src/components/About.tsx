@@ -22,10 +22,10 @@ const About: React.FC = () => {
           </div>
           
           <div className="relative">
-            <div className="border-2 border-neon-blue p-6 rounded-lg shadow-neon-blue bg-black/50 backdrop-blur-sm">
+            <div className="border-2 border-neon-blue rounded-lg shadow-neon-blue bg-black/50 backdrop-blur-sm p-8">
               <blockquote className="relative">
-                <div className="text-5xl text-neon-blue absolute -top-2 -left-2">"</div>
-                <p className="my-4 pt-6 pl-6 text-xl italic text-gray-200">
+                <div className="text-5xl text-neon-blue absolute top-0 left-0">"</div>
+                <p className="my-6 pl-8 pr-8 text-xl text-gray-200">
                   We've gone beyond borders. Graphic design was just the beginning. Now, we're building AI agents, automating workflows, and redefining how brands connect.
                 </p>
                 <footer className="text-right mt-4">
@@ -33,7 +33,7 @@ const About: React.FC = () => {
                     — Kennedy Asiedu Nyarko, Founder
                   </span>
                 </footer>
-                <div className="text-5xl text-neon-blue absolute -bottom-8 right-0">"</div>
+                <div className="text-5xl text-neon-blue absolute bottom-0 right-0">"</div>
               </blockquote>
             </div>
           </div>

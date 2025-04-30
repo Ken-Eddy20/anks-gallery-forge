@@ -16,8 +16,8 @@ const Index: React.FC = () => {
     // Update title
     document.title = "ANK's Gallery | AI Automation & Creative Design";
     
-    // Initialize EmailJS
-    emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS public key
+    // Initialize EmailJS with the provided user ID
+    emailjs.init("y3trLROsWo1QDwIPt"); 
   }, []);
 
   return (
