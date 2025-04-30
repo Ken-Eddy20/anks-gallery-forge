@@ -19,17 +19,16 @@ const Hero: React.FC = () => {
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-8 z-10">
         <div className="flex flex-col justify-center space-y-6">
           <h1 className="fade-in animate-fade-in-up">
-            <span className="neon-text-blue">ANKS</span>{" "}
-            <span className="neon-text-purple">GALLERY</span> - Powering Your Vision with{" "}
-            <span className="neon-text-blue">AI</span> and{" "}
-            <span className="neon-text-purple">Creative Design</span>
+            Powering Your Vision with{" "}
+            <span className="text-neon-blue">AI</span> and{" "}
+            <span className="text-neon-purple">Creative Design</span>
           </h1>
           
           <p className="text-gray-300 text-lg fade-in animate-fade-in-up">
-            <span className="neon-text-blue">AI Automation</span> |{" "}
-            <span className="neon-text-purple">AI Consultation</span> |{" "}
-            <span className="neon-text-blue">Graphic Design</span> |{" "}
-            <span className="neon-text-purple">Video Editing</span>
+            <span className="text-neon-blue">AI Automation</span> |{" "}
+            <span className="text-neon-purple">AI Consultation</span> |{" "}
+            <span className="text-neon-blue">Graphic Design</span> |{" "}
+            <span className="text-neon-purple">Video Editing</span>
           </p>
           
           <div className="flex flex-wrap gap-4 fade-in animate-fade-in-up">

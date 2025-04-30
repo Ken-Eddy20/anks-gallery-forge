@@ -79,22 +79,18 @@
 @layer components {
   .neon-text-blue {
     @apply text-neon-blue;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.5);
   }
   
   .neon-text-purple {
     @apply text-neon-purple;
-    text-shadow: 0 0 5px rgba(155, 48, 255, 0.7), 0 0 10px rgba(155, 48, 255, 0.5);
   }
   
   .neon-border-blue {
     @apply border-neon-blue;
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.5);
   }
   
   .neon-border-purple {
     @apply border-neon-purple;
-    box-shadow: 0 0 5px rgba(155, 48, 255, 0.7), 0 0 10px rgba(155, 48, 255, 0.5);
   }
 
   .service-card {
