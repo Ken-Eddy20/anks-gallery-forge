@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="neon-text-blue">ANK'S</span>{" "}
+              <span className="neon-text-blue">ANKS</span>{" "}
               <span className="neon-text-purple">GALLERY</span>
             </h3>
             <p className="text-gray-400 mb-4">
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center">
           <p className="text-gray-500">
-            © {currentYear} ANK's Gallery | All Rights Reserved
+            © {currentYear} Anks Gallery | All Rights Reserved
           </p>
           <p className="text-gray-600 mt-2 text-sm">
             Founded by Kennedy Asiedu Nyarko

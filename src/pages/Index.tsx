@@ -14,7 +14,7 @@ import emailjs from "emailjs-com";
 const Index: React.FC = () => {
   useEffect(() => {
     // Update title
-    document.title = "ANK's Gallery | AI Automation & Creative Design";
+    document.title = "Anks Gallery | AI Automation & Creative Design";
     
     // Initialize EmailJS with the provided user ID
     emailjs.init("y3trLROsWo1QDwIPt"); 
@@ -23,10 +23,10 @@ const Index: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>ANK's Gallery | AI Automation & Creative Design</title>
-        <meta name="description" content="ANK's Gallery specializes in AI Automation, AI Consultation, Graphic Design, and Video Editing Services. Founded by Kennedy Asiedu Nyarko." />
+        <title>Anks Gallery | AI Automation & Creative Design</title>
+        <meta name="description" content="Anks Gallery specializes in AI Automation, AI Consultation, Graphic Design, and Video Editing Services. Founded by Kennedy Asiedu Nyarko." />
         <meta name="keywords" content="AI Automation, AI Consultation, Graphic Design, Video Editing, AI agents, Kennedy Asiedu Nyarko" />
-        <meta property="og:title" content="ANK's Gallery | AI Automation & Creative Design" />
+        <meta property="og:title" content="Anks Gallery | AI Automation & Creative Design" />
         <meta property="og:description" content="Powering your vision with AI and creative design. AI Automation, AI Consultation, Graphic Design, and Video Editing Services." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://anksgallery.com" />

@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
       <div className="container-custom flex items-center justify-between h-20">
         <a href="#" className="flex items-center">
           <span className="text-xl font-poppins font-bold">
-            <span className="neon-text-blue">ANK'S</span>{" "}
+            <span className="neon-text-blue">ANKS</span>{" "}
             <span className="neon-text-purple">GALLERY</span>
           </span>
         </a>
