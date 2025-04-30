@@ -19,7 +19,8 @@ const Hero: React.FC = () => {
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-8 z-10">
         <div className="flex flex-col justify-center space-y-6">
           <h1 className="fade-in animate-fade-in-up">
-            Powering Your Vision with{" "}
+            <span className="neon-text-blue">ANKS</span>{" "}
+            <span className="neon-text-purple">GALLERY</span> - Powering Your Vision with{" "}
             <span className="neon-text-blue">AI</span> and{" "}
             <span className="neon-text-purple">Creative Design</span>
           </h1>
