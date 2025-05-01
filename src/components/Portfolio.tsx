@@ -39,7 +39,7 @@ const Portfolio: React.FC = () => {
     {
       title: "Brand Identity System",
       category: "Graphic Design",
-      imageUrl: "/lovable-uploads/69410cfd-15a0-46c5-9f5e-d443640d4ea7.png",
+      imageUrl: "/lovable-uploads/b5febf24-4245-451c-bf6a-f8c935da6c52.png",
     },
     {
       title: "AI Integration Strategy",
