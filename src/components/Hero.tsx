@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
         <div className="flex items-center justify-center">
           <div className="w-full max-w-lg fade-in animate-fade-in-up animate-float">
             <img 
-              src="/lovable-uploads/d5c95c8b-6a89-43a2-a697-b11725f4908f.png" 
+              src="/lovable-uploads/69410cfd-15a0-46c5-9f5e-d443640d4ea7.png" 
               alt="Anks Gallery - Logo" 
               className="w-full h-auto"
             />

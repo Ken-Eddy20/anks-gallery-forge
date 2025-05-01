@@ -39,8 +39,8 @@ const Navbar: React.FC = () => {
       <div className="container-custom flex items-center justify-between h-20">
         <a href="#" className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/69410cfd-15a0-46c5-9f5e-d443640d4ea7.png" 
-            alt="Anks Gallery Logo" 
+            src="/lovable-uploads/d5c95c8b-6a89-43a2-a697-b11725f4908f.png" 
+            alt="Anks Gallery Flyer" 
             className="h-10 w-auto"
           />
           <span className="text-xl font-poppins font-bold">
