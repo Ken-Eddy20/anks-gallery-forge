@@ -5,6 +5,8 @@ Built with Next.js 14 (App Router) and Tailwind CSS, designed for both performan
 
 ## Project info
 
+Built in lovable and cursor ai
+
 **URL**: https://anksgallery.online
 
 ## About Anks Gallery
