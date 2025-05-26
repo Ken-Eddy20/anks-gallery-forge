@@ -1,4 +1,3 @@
-
 import React from "react";
 
 interface PortfolioItemProps {
@@ -22,7 +21,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
         />
       </div>
       <div className="portfolio-item-overlay">
-        <h4 className="text-xl font-bold mb-1 text-neon-blue">{title}</h4>
+        <h4 className="text-xl font-bold mb-1 text-[hsl(200,100%,38%)]">{title}</h4>
         <p className="text-neon-purple">{category}</p>
       </div>
     </div>
@@ -59,23 +58,24 @@ const Portfolio: React.FC = () => {
     {
       title: "Interactive Marketing Campaign",
       category: "Graphic Design",
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400",
+      imageUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
     },
   ];
 
   return (
-    <section id="portfolio" className="section bg-black/90">
+    <section id="portfolio" className="section bg-black/90 py-24 md:py-32">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="mb-4">
-            Our <span className="text-neon-blue">Portfolio</span>
+            Our <span className="text-[hsl(200,100%,38%)]">Portfolio</span>
           </h2>
+          <div className="w-20 h-1 mx-auto bg-neon-blue rounded-full opacity-20 mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Explore our latest projects where creativity meets artificial intelligence to deliver exceptional results.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {portfolioItems.map((item, index) => (
             <PortfolioItem
               key={index}

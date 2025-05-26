@@ -91,18 +91,19 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="section bg-gradient-to-t from-black to-black/90">
+    <section id="contact" className="section bg-gradient-to-t from-black to-black/90 py-24 md:py-32">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="mb-4">
             Get in <span className="neon-text-purple">Touch</span>
           </h2>
+          <div className="w-20 h-1 mx-auto bg-neon-purple rounded-full opacity-20 mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Have a project in mind? We'd love to hear from you and discuss how we can help bring your vision to life.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -173,8 +174,8 @@ const Contact: React.FC = () => {
                 />
                 <ContactInfo 
                   icon={<Mail size={20} />} 
-                  text="anksgallery2000@gmail.com" 
-                  href="mailto:anksgallery2000@gmail.com"
+                  text="anksgallery@gmail.com" 
+                  href="mailto:anksgallery@gmail.com"
                 />
                 <ContactInfo 
                   icon={<MapPin size={20} />} 

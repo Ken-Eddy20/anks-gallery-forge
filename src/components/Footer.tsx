@@ -1,13 +1,12 @@
-
 import React from "react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black py-12 border-t border-white/10">
+    <footer className="bg-black py-20 border-t border-white/10">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           <div>
             <h3 className="text-xl font-bold mb-4">
               <span className="neon-text-blue">ANKS</span>{" "}

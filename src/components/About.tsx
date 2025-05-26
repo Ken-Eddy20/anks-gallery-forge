@@ -1,11 +1,10 @@
-
 import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="section bg-black">
+    <section id="about" className="section bg-black py-24 md:py-32">
       <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <h2 className="mb-6">
               About <span className="neon-text-purple">Anks Gallery</span>

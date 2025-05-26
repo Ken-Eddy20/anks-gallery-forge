@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -32,11 +31,11 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black/70 backdrop-blur-lg shadow-lg"
-          : "bg-transparent"
+          ? "bg-black/80 backdrop-blur-lg shadow-2xl"
+          : "bg-transparent shadow-md"
       }`}
     >
-      <div className="container-custom flex items-center justify-between h-20">
+      <div className="container-custom flex items-center justify-between h-24 py-4">
         <a href="#" className="flex items-center gap-2">
           <img 
             src="/lovable-uploads/d5c95c8b-6a89-43a2-a697-b11725f4908f.png" 
@@ -44,7 +43,7 @@ const Navbar: React.FC = () => {
             className="h-10 w-auto"
           />
           <span className="text-xl font-poppins font-bold">
-            <span className="text-neon-blue">ANKS</span>{" "}
+            <span className="text-[hsl(200,100%,38%)]">ANKS</span>{" "}
             <span className="text-neon-purple">GALLERY</span>
           </span>
         </a>

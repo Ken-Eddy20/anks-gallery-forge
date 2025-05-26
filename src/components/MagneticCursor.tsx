@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useRef } from "react";
 
 const MagneticCursor = () => {
@@ -14,7 +13,7 @@ const MagneticCursor = () => {
     const isTouchDevice = window.matchMedia("(hover: none)").matches;
     if (isTouchDevice) return;
 
-    let magneticElements: NodeListOf<Element>;
+    const magneticElements = document.querySelectorAll('.magnetic');
     
     const moveCursor = (e: MouseEvent) => {
       const { clientX, clientY } = e;
@@ -54,9 +53,6 @@ const MagneticCursor = () => {
     document.addEventListener("mousemove", moveCursor);
     document.addEventListener("mouseenter", showCursor);
     document.addEventListener("mouseleave", hideCursor);
-
-    // Get all magnetic elements
-    magneticElements = document.querySelectorAll(".magnetic");
 
     return () => {
       document.removeEventListener("mousemove", moveCursor);

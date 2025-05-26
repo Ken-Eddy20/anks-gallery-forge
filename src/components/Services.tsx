@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Rocket, Code, Image, Video } from "lucide-react";
 
@@ -12,7 +11,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon }) =
   return (
     <div className="service-card magnetic">
       <div className="flex items-center justify-center mb-6">
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-black/50 text-neon-blue">
+        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-black/50 text-[hsl(200,100%,38%)]">
           {icon}
         </div>
       </div>
@@ -47,16 +46,17 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="section bg-gradient-to-b from-black to-black/90">
+    <section id="services" className="section bg-gradient-to-b from-black to-black/90 py-24 md:py-32">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="mb-4">Our <span className="neon-text-blue">Services</span></h2>
+          <div className="w-20 h-1 mx-auto bg-neon-blue rounded-full opacity-20 mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             We combine creativity with artificial intelligence to deliver exceptional results for your business.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
