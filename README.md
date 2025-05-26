@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+# ANK’s Gallery — AI Automation & Creative Solutions Website
+
+A futuristic, neon-themed website built to showcase ANK’s Gallery - a brand that combines the power of AI automation, consultation, graphic design, and video editing.
+Built with Next.js 14 (App Router) and Tailwind CSS, designed for both performance and aesthetics
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/eff012ed-b829-4ee7-8d16-401050eb2c2f
+**URL**: https://anksgallery.online
 
-## How can I edit this code?
+## About Anks Gallery
 
-There are several ways of editing your application.
+Founder: Kennedy Asiedu Nyarko (ANK)
+ANK’s Gallery is a creative + tech hybrid studio that helps businesses and individuals:
 
-**Use Lovable**
+Automate their workflow using AI tools
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/eff012ed-b829-4ee7-8d16-401050eb2c2f) and start prompting.
+Get professional consultation on AI integrations
 
-Changes made via Lovable will be committed automatically to this repo.
+Receive premium graphic design solutions
 
-**Use your preferred IDE**
+Get professional video editing services for ads, reels, and content
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Features**
 
-Follow these steps:
+Futuristic neon UI with glowing blue + purple visual style
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Animated hover effects and magnetic cursor interactions
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Fully responsive design (desktop + mobile)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Scroll and component animations using Framer Motion
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Modern App Router with layout and routing optimizations
 
-**Edit a file directly in GitHub**
+Clean and scalable folder structure using src/
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Tailwind CSS for fast styling
 
-**Use GitHub Codespaces**
+ESLint for clean code practices
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+**Tech Stack**
 
-This project is built with:
+**Technology**	           **Purpose**
+Next.js 14	           React framework for full-stack web apps
+Tailwind CSS	         Utility-first styling
+Framer Motion	         Animations and effects
+App Router	           Modern routing architecture
+ESLint	               Code quality and error checking
+Prettier(optional)   	 Code formatting
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/eff012ed-b829-4ee7-8d16-401050eb2c2f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
