@@ -40,14 +40,4 @@ Tailwind CSS for fast styling
 ESLint for clean code practices
 
 
-**Tech Stack**
-
-**Technology**	           **Purpose**
-Next.js 14	           React framework for full-stack web apps
-Tailwind CSS	         Utility-first styling
-Framer Motion	         Animations and effects
-App Router	           Modern routing architecture
-ESLint	               Code quality and error checking
-Prettier(optional)   	 Code formatting
-
 
