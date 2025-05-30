@@ -1,30 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+const slugify = (str: string) =>
+  str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 interface PortfolioItemProps {
   title: string;
   category: string;
   imageUrl: string;
+  link: string;
 }
 
 const PortfolioItem: React.FC<PortfolioItemProps> = ({
   title,
   category,
   imageUrl,
+  link,
 }) => {
   return (
-    <div className="portfolio-item magnetic">
-      <div className="aspect-w-4 aspect-h-3 bg-gray-800 rounded-lg overflow-hidden">
-        <img
-          src={imageUrl}
-          alt={title}
-          className="w-full h-full object-cover transform transition-all duration-500 hover:scale-110"
-        />
+    <Link to={link} className="block group relative">
+      <div className="bg-[#18122B] rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl mb-4">
+        <div className="aspect-w-4 aspect-h-3 w-full rounded-xl overflow-hidden mb-4 border-2 border-white/15 group-hover:border-[hsl(200,100%,38%)] transition-colors" style={{height: '220px'}}>
+          <img
+            src={imageUrl}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h4 className="text-xl font-bold mb-1 text-[hsl(200,100%,38%)] text-center">{title}</h4>
+        <p className="text-neon-purple text-center mb-2">{category}</p>
+        <span className="absolute bottom-4 right-4 flex items-center gap-1 animate-bounce text-xs text-purple-200 bg-black/60 px-2 py-1 rounded-full shadow-md">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="#a78bfa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          Explore
+        </span>
       </div>
-      <div className="portfolio-item-overlay">
-        <h4 className="text-xl font-bold mb-1 text-[hsl(200,100%,38%)]">{title}</h4>
-        <p className="text-neon-purple">{category}</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 
@@ -33,7 +43,7 @@ const Portfolio: React.FC = () => {
     {
       title: "AI Workflow Automation",
       category: "AI Automation",
-      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/ai-automation.png",
     },
     {
       title: "Brand Identity System",
@@ -43,45 +53,40 @@ const Portfolio: React.FC = () => {
     {
       title: "AI Integration Strategy",
       category: "AI Consultation",
-      imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/ai-consultation.png",
     },
     {
       title: "Product Showcase Video",
       category: "Video Editing",
-      imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/video-editing.jpg",
     },
     {
       title: "Corporate AI Assistant",
       category: "AI Automation",
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&h=400",
+      imageUrl: "/ai-corporate-assistant.png",
     },
     {
-      title: "Interactive Marketing Campaign",
-      category: "Graphic Design",
-      imageUrl: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+      title: "Website Development",
+      category: "Web Design and Development",
+      imageUrl: "/website-development.jpg",
     },
   ];
 
   return (
-    <section id="portfolio" className="section bg-black/90 py-24 md:py-32">
+    <section id="portfolio" className="section bg-gradient-to-b from-[#18122B] via-[#251B3E] to-[#18122B] py-24 md:py-32 min-h-screen">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="mb-4">
-            Our <span className="text-[hsl(200,100%,38%)]">Portfolio</span>
-          </h2>
-          <div className="w-20 h-1 mx-auto bg-neon-blue rounded-full opacity-20 mb-6"></div>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            Explore our latest projects where creativity meets artificial intelligence to deliver exceptional results.
-          </p>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our <span className="text-[hsl(200,100%,38%)]">Portfolio</span></h2>
+          <p className="text-lg text-purple-200 max-w-2xl mx-auto">Explore our latest projects where creativity meets artificial intelligence to deliver exceptional results. Each project is a testament to our passion for design and innovation.</p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-2 md:px-0">
           {portfolioItems.map((item, index) => (
             <PortfolioItem
               key={index}
               title={item.title}
               category={item.category}
               imageUrl={item.imageUrl}
+              link={`/portfolio/${slugify(item.title)}`}
             />
           ))}
         </div>
