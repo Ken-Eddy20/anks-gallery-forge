@@ -20,7 +20,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   return (
     <Link to={link} className="block group relative">
       <div className="bg-[#18122B] rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl mb-4">
-        <div className="aspect-w-4 aspect-h-3 w-full rounded-xl overflow-hidden mb-4 border-2 border-white/15 group-hover:border-[hsl(200,100%,38%)] transition-colors" style={{height: '220px'}}>
+        <div className="aspect-w-4 aspect-h-3 w-full rounded-xl overflow-hidden mb-4 border-2 border-white/15 group-hover:border-[hsl(200,100%,38%)] transition-colors h-[120px] sm:h-[180px] md:h-[220px] rounded-lg sm:rounded-xl">
           <img
             src={imageUrl}
             alt={title}
