@@ -70,7 +70,7 @@ const PortfolioProductShowcaseVideo: React.FC = () => {
     <div className="bg-gradient-to-b from-[#18122B] via-[#251B3E] to-[#18122B] min-h-screen text-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden">
-        <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="z-10 relative pt-36 pb-20 w-full max-w-3xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="z-10 relative px-4 pt-36 pb-20 w-full max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent glitch">We Turn Clips Into Cinematic Stories.</h1>
           <p className="text-lg md:text-xl text-purple-200 mb-8">Whether you're a brand, influencer, or business, we bring your video vision to life—frame by frame.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-4">

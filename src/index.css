@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -53,9 +54,9 @@
     @apply border-border;
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply bg-neutral-900 text-foreground font-inter selection:bg-neon-purple selection:text-black;
+    @apply bg-neutral-900 text-foreground font-geist selection:bg-neon-purple selection:text-black;
     position: relative;
   }
 
@@ -69,7 +70,12 @@
     opacity: 0.15;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-poppins font-bold;
   }
 
@@ -88,25 +94,25 @@
 
 @layer components {
   .neon-text-blue {
-    @apply text-[hsl(200,100%,38%)];
+    @apply text-[#0081C2];
   }
-  
+
   .neon-text-purple {
     @apply text-neon-purple;
   }
-  
+
   .neon-border-blue {
-    @apply border-[hsl(200,100%,38%)];
+    @apply border-[#0081C2];
   }
-  
+
   .neon-border-purple {
     @apply border-neon-purple;
   }
 
   .service-card {
-    @apply bg-black/50 border border-white/10 backdrop-blur-sm p-6 rounded-lg transition-all duration-300;
+    @apply bg-black/90 border border-white backdrop-blur-sm p-10 rounded-lg transition-all duration-300;
   }
-  
+
   .service-card:hover {
     @apply transform scale-[1.05] border-neon-blue;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
@@ -115,25 +121,25 @@
   .portfolio-item {
     @apply relative overflow-hidden rounded-lg cursor-pointer;
   }
-  
+
   .portfolio-item-overlay {
     @apply absolute inset-0 bg-black/70 opacity-0 transition-all duration-300 flex flex-col justify-end p-6;
   }
-  
+
   .portfolio-item:hover .portfolio-item-overlay {
     @apply opacity-100;
   }
-  
+
   .btn {
     @apply px-8 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105;
   }
-  
+
   .btn-primary {
-    @apply bg-[hsl(200,100%,38%)] text-black hover:shadow-[0_0_20px_hsl(200,100%,38%,0.5)];
+    @apply bg-[#0081C2] text-black;
   }
-  
+
   .btn-secondary {
-    @apply bg-transparent border border-neon-purple text-neon-purple hover:shadow-neon-purple;
+    @apply bg-transparent border border-neon-purple text-neon-purple;
   }
 
   .magnetic {
@@ -145,7 +151,7 @@
   }
 
   .container-custom {
-    @apply container mx-auto px-12 max-w-6xl;
+    @apply container mx-auto;
   }
 
   .divider-gentle {
@@ -156,25 +162,25 @@
   .form-input {
     @apply w-full bg-black/50 border border-white/20 rounded-md p-3 text-white focus:outline-none focus:border-neon-blue transition-all duration-300 backdrop-blur-sm;
   }
-  
+
   .form-input:focus {
     @apply shadow-neon-blue;
   }
 
   .bg-neon-blue {
-    @apply bg-[hsl(200,100%,38%)];
+    @apply bg-[#0081C2];
   }
 
   .text-neon-blue {
-    @apply text-[hsl(200,100%,38%)];
+    @apply text-[#0081C2];
   }
 
   .border-neon-blue {
-    @apply border-[hsl(200,100%,38%)];
+    @apply border-[#0081C2];
   }
 
   .shadow-neon-blue {
-    box-shadow: 0 0 20px hsl(200,100%,38%,0.5);
+    box-shadow: 0 0 20px hsl(200, 100%, 38%, 0.5);
   }
 }
 
@@ -207,12 +213,15 @@
     opacity: 0;
     transform: translateY(0) translateX(0);
   }
+
   10% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: translateY(-100vh) translateX(20px);
@@ -250,31 +259,40 @@
   0% {
     transform: translate(0, 0) scale(1);
   }
+
   10% {
     transform: translate(-6%, 4%) scale(1.08);
   }
+
   20% {
     transform: translate(8%, -8%) scale(1.12);
   }
+
   35% {
     transform: translate(-10%, 10%) scale(1.05);
   }
+
   50% {
     transform: translate(12%, -6%) scale(1.15);
   }
+
   65% {
     transform: translate(-8%, 8%) scale(1.09);
   }
+
   80% {
     transform: translate(6%, -10%) scale(1.13);
   }
+
   90% {
     transform: translate(-4%, 6%) scale(1.07);
   }
+
   100% {
     transform: translate(0, 0) scale(1);
   }
 }
-.animate-gradient-move > div {
+
+.animate-gradient-move>div {
   animation: gradient-move 18s ease-in-out infinite alternate;
 }

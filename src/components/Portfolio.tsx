@@ -20,7 +20,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   return (
     <Link to={link} className="block group relative">
       <div className="bg-[#18122B] rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl mb-4">
-        <div className="aspect-w-4 aspect-h-3 w-full rounded-xl overflow-hidden mb-4 border-2 border-white/15 group-hover:border-[hsl(200,100%,38%)] transition-colors h-[120px] sm:h-[180px] md:h-[220px] rounded-lg sm:rounded-xl">
+        <div className="aspect-w-4 aspect-h-3 w-full overflow-hidden mb-4 border-2 border-white/15 group-hover:border-[hsl(200,100%,38%)] transition-colors sm:h-[180px] md:h-[220px] rounded-lg sm:rounded-xl">
           <img
             src={imageUrl}
             alt={title}
@@ -28,9 +28,9 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
           />
         </div>
         <h4 className="text-xl font-bold mb-1 text-[hsl(200,100%,38%)] text-center">{title}</h4>
-        <p className="text-neon-purple text-center mb-2">{category}</p>
-        <span className="absolute bottom-4 right-4 flex items-center gap-1 animate-bounce text-xs text-purple-200 bg-black/60 px-2 py-1 rounded-full shadow-md">
-          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="#a78bfa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        <p className=" text-center mb-2">{category}</p>
+        <span className=" flex items-center gap-1 text-xs text-purple-200 mt-2 bg-black p-3 rounded shadow-md">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="#a78bfa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           Explore
         </span>
       </div>
@@ -79,7 +79,7 @@ const Portfolio: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our <span className="text-[hsl(200,100%,38%)]">Portfolio</span></h2>
           <p className="text-lg text-purple-200 max-w-2xl mx-auto">Explore our latest projects where creativity meets artificial intelligence to deliver exceptional results. Each project is a testament to our passion for design and innovation.</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-2 md:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12 px-2 md:px-0">
           {portfolioItems.map((item, index) => (
             <PortfolioItem
               key={index}
