@@ -3,10 +3,10 @@ import { Phone, Mail, MapPin, Instagram, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "emailjs-com";
 
-const ContactInfo: React.FC<{ icon: React.ReactNode; text: string; href?: string }> = ({ 
-  icon, 
+const ContactInfo: React.FC<{ icon: React.ReactNode; text: string; href?: string }> = ({
+  icon,
   text,
-  href 
+  href
 }) => {
   const content = (
     <div className="flex items-center space-x-4 magnetic">
@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast({
         title: "Error",
@@ -95,9 +95,9 @@ const Contact: React.FC = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="mb-4">
-            Get in <span className="neon-text-purple">Touch</span>
+            Get in <span className="text-neon-blue">Touch</span>
           </h2>
-          <div className="w-20 h-1 mx-auto bg-neon-purple rounded-full opacity-20 mb-6"></div>
+          <div className="w-20 h-1 mx-auto bg-neon-blue rounded-full mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Have a project in mind? We'd love to hear from you and discuss how we can help bring your vision to life.
           </p>
@@ -167,19 +167,19 @@ const Contact: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-4">
-                <ContactInfo 
-                  icon={<Phone size={20} />} 
-                  text="+233 248 968 580" 
+                <ContactInfo
+                  icon={<Phone size={20} />}
+                  text="+233 248 968 580"
                   href="tel:+233248968580"
                 />
-                <ContactInfo 
-                  icon={<Mail size={20} />} 
-                  text="anksgallery@gmail.com" 
+                <ContactInfo
+                  icon={<Mail size={20} />}
+                  text="anksgallery@gmail.com"
                   href="mailto:anksgallery@gmail.com"
                 />
-                <ContactInfo 
-                  icon={<MapPin size={20} />} 
-                  text="Ghana" 
+                <ContactInfo
+                  icon={<MapPin size={20} />}
+                  text="Ghana"
                 />
               </div>
             </div>

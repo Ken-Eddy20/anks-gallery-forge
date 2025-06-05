@@ -71,6 +71,7 @@ export default {
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
+				'geist': ['Geist', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -87,11 +88,11 @@ export default {
 					to: { height: '0' },
 				},
 				'pulse-glow': {
-					'0%, 100%': { 
+					'0%, 100%': {
 						opacity: '1',
 						filter: 'brightness(1)'
 					},
-					'50%': { 
+					'50%': {
 						opacity: '0.8',
 						filter: 'brightness(1.2)'
 					},
@@ -106,11 +107,11 @@ export default {
 					'100%': { backgroundPosition: '0% 50%' },
 				},
 				'fade-in-up': {
-					'0%': { 
+					'0%': {
 						opacity: '0',
 						transform: 'translateY(20px)'
 					},
-					'100%': { 
+					'100%': {
 						opacity: '1',
 						transform: 'translateY(0)'
 					},
